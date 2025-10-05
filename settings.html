@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div id="page">
+    <header>
+        <div class="left">
+            <img src="immge/kmutnb.jpg" alt="KMUTNB logo">
+            <div class="title">
+                <h1>ระบบจัดการโครงการนักศึกษา</h1>
+                <p>Student Project Management System-Presentation Mockup</p>
+            </div>
+        </div>
+        <div class="right">
+            ภาคเรียนที่ 1 ปีการศึกษา 2568
+        </div>
+    </header>
+    <div class="topnav">
+        <li><a href="index.html">หน้าหลัก</a></li>
+        <li><a href="set-committee.html">กำหนดกรรมการสอบ</a></li>
+        <li><a href="project-summary.html">สรุปโครงงาน</a></li>
+        <li><a href="settings.html">การตั้งค่าระบบ</a></li>
+        <div class="login">
+        <li><a href="index.html">ออกจากระบบ</a></li>
+        </div>     
+    </div>
+    
+        <!-- ผู้ใช้ -->
+        <section>
+            <h2>การตั้งค่าผู้ใช้</h2>
+            <div class="form-group">
+                <label>สิทธิ์เริ่มต้น</label>
+                <select>
+                    <option>นักศึกษา</option>
+                    <option>อาจารย์</option>
+                    <option>ผู้ดูแลระบบ</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>การลงทะเบียน</label>
+                <select>
+                    <option>เปิด</option>
+                    <option>ปิด</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- โครงงาน -->
+        <section>
+            <h2>การตั้งค่าโครงงาน</h2>
+            <div class="form-group">
+                <label>ปีการศึกษา</label>
+                <input type="number" placeholder="ปีการศึกษา">
+            </div>
+            <div class="form-group">
+                <label>จำนวนโครงงานสูงสุดต่อคน</label>
+                <input type="number" placeholder="จำนวนโครงงานสูงสุดต่อคน">
+            </div>
+            <div class="form-group">
+                <label>สถานะการเปิดรับโครงงาน</label>
+                <select>
+                    <option>เปิด</option>
+                    <option>ปิด</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- การสอบ -->
+        <section>
+            <h2>การตั้งค่าการสอบ</h2>
+            <div class="form-group">
+                <label>วันที่สอบ</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>เวลาสอบ</label>
+                <input type="time">
+            </div>
+            <div class="form-group">
+                <label>รูปแบบการสอบ</label>
+                <select>
+                    <option>นำเสนอ(Presentation)</option>
+                    <option>สอบปากเปล่า(Oral Examination)</option>
+                    <option>ทั้งสองแบบ(Presentation + Oral Examination)</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- กรรมการ -->
+        <section>
+            <h2>การตั้งค่ากรรมการ</h2>
+            <div class="form-group">
+                <label>ชื่อกรรมการ</label>
+                <input type="text" placeholder="ชื่อ-สกุล">
+            </div>
+            <div class="form-group">
+                <label>ตำแหน่ง</label>
+                <select>
+                    <option>ประธานกรรมการ</option>
+                    <option>กรรมการร่วม</option>
+                    <option>เลขานุการ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>สังกัด/คณะ</label>
+                <input type="text" placeholder="คณะ">
+            </div>
+            <div class="form-group">
+                <label>โครงงานที่รับผิดชอบ</label>
+                <input type="text" placeholder="โครงงานที่รับผิดชอบ">
+            </div>
+        </section>
+
+        <!-- อาจารย์ที่ปรึกษา -->
+        <section>
+            <h2>การตั้งค่าอาจารย์ที่ปรึกษา</h2>
+            <div class="form-group">
+                <label>ชื่ออาจารย์ที่ปรึกษา</label>
+                <input type="text" placeholder="ชื่อ-สกุล">
+            </div>
+            <div class="form-group">
+                <label>สังกัด/คณะ</label>
+                <input type="text" placeholder="คณะ">
+            </div>
+            <div class="form-group">
+                <label>จำนวนนักศึกษาที่รับผิดชอบ</label>
+                <input type="number" placeholder="จำนวนนักศึกษาที่รับผิดชอบ">
+            </div>
+        </section>
+
+        <!-- นักศึกษา -->
+        <section>
+            <h2>การตั้งค่านักศึกษา</h2>
+            <div class="form-group">
+                <label>ชื่อ-สกุล</label>
+                <input type="text" placeholder="ชื่อ-สกุล">
+            </div>
+            <div class="form-group">
+                <label>รหัสนักศึกษา</label>
+                <input type="text" placeholder="รหัสนักศึกษา">
+            </div>
+            <div class="form-group">
+                <label>ชั้นปี</label>
+                <input type="text" placeholder="ชั้นปี">
+            </div>
+            <div class="form-group">
+                <label>คณะ</label>
+                <input type="text" placeholder="คณะ">
+            </div>
+            <div class="form-group">
+                <label>สาขา</label>
+                <input type="text" placeholder="สาขา">
+            </div>
+
+            <h2>สถานะการลงทะเบียน</h2>
+            <div class="form-group">
+                <label>สถานะการลงทะเบียน</label>
+                <select>
+                    <option>ลงทะเบียนแล้ว</option>
+                    <option>ยังไม่ลงทะเบียน</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- ปุ่ม -->
+        <div class="btn-group">
+            <button class="btn btn-save">บันทึก</button>
+            <button class="btn btn-cancel">ยกเลิก</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+        <h3>อื่นๆ</h3>
+        <ul>
+            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1y7vnPRgfEhYKhXQVbHxwsdwM1kdxrpRc%2Fview%3Fusp%3Dsharing&h=AT25me3oUQqxi9kQCxX723da5SBsMU1qLoboOF0MvWpid5MX52f6VdV5v-VOSPSlpVg5EVGWXq1_64Xk5VHzoolRpxXp72QIjt1g5WW40QYoexaRIpDLNfTcZXRxVuRxIP4BPuu4AQGm6CdcAUkDDjXAqPFhnFmK&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตารางสอบ</a></li>
+            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1KU2qisg69m7mp3FwvtxrbTMmTbRrFdX_%3Fusp%3Ddrive_link&h=AT3XYAvYiVkW2-9SV7d4Wmsa3nmCkm_zIKGf27iGDHTfINFL9bAoGEID-Rav28gQLfcZCVVW1GfgNA-xNJzMBCzmkcAcDodnrK3jdiVZ2JpGjAs_no-WSH-b2FDAVVXIWPn8gqgz5Bi99y6MW23T6I2y56o2pK3g&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตรวจสอบรายชื่อสอบ</a></li>
+        </ul>
+        </div>
+        <div class="footer-right">
+            <h3>ติดต่อ มจพ. ปราจีนบุรี</h3>
+            <p>มหาวิทยาลัยเทคโลโลยีพระจอมเกล้าพระนครเหนือ</p>
+            <p>ปราจีนบุรี ตำบลเนินหอม อำเภอ เมือง 25230</p>
+            <p>โทร 037-217-300</p>
+        </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
